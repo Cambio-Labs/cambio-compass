@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Compass } from 'lucide-react';
 import Wizard from './components/Wizard';
 import Results from './components/Results';
+import LandingPage from './components/LandingPage';
 import { QUESTIONS, PROGRAMS } from './constants';
 import { calculateMatches } from './services/matchingEngine';
 import { MatchResult } from './types';
@@ -40,27 +41,7 @@ function App() {
       {/* Main Content */}
       <main className="flex-1 flex flex-col">
         {view === 'welcome' && (
-          <div className="flex-1 flex items-center justify-center px-4 py-12">
-            <div className="max-w-5xl w-full text-center">
-              <div className="w-24 h-24 bg-white rounded-3xl shadow-xl flex items-center justify-center mx-auto mb-8 transform -rotate-6">
-                <Compass className="w-12 h-12 text-brand" />
-              </div>
-
-              <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight" style={{ fontFamily: 'avenir-lt-w01_35-light1475496,avenir-lt-w05_35-light,sans-serif' }}>Find the support your business needs</h1>
-              <p className="text-xl text-slate-600 mb-10 leading-relaxed mx-auto">Answer a few simple questions about your goals to receive personalized matches for the most relevant free business resources and opportunities</p>
-
-              <button
-                onClick={handleStart}
-                className="bg-brand hover:bg-brand-dark text-white text-lg font-bold px-8 py-4 rounded-xl shadow-lg shadow-brand/30 transition-all hover:scale-105 active:scale-95"
-              >
-                Find My Resources
-              </button>
-
-              <p className="mt-8 text-sm text-slate-400">
-                Takes less than 2 minutes • No account required
-              </p>
-            </div>
-          </div>
+          <LandingPage onStart={handleStart} />
         )}
 
         {view === 'wizard' && (

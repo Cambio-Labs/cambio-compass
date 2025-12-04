@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, ArrowLeft, Check } from 'lucide-react';
 import { Question, QuestionOption } from '../types';
-import ProgressBar from './ProgressBar';
+
 
 interface WizardProps {
   questions: Question[];
@@ -23,7 +23,7 @@ const Wizard: React.FC<WizardProps> = ({ questions, onComplete }) => {
 
   const handleAnswer = (value: any) => {
     setAnswers(prev => ({ ...prev, [currentQuestion.id]: value }));
-    
+
     // Auto-advance for single choice
     if (currentQuestion.type !== 'multi') {
       setTimeout(() => nextStep(), 250);
@@ -73,8 +73,8 @@ const Wizard: React.FC<WizardProps> = ({ questions, onComplete }) => {
   return (
     <div className="w-full max-w-2xl mx-auto px-4 py-8 flex flex-col min-h-[600px]">
       <div className="flex justify-between items-center mb-4">
-        <button 
-          onClick={prevStep} 
+        <button
+          onClick={prevStep}
           disabled={currentStep === 0}
           className={`p-2 rounded-full hover:bg-slate-100 transition-colors ${currentStep === 0 ? 'opacity-0 pointer-events-none' : ''}`}
         >
@@ -115,9 +115,9 @@ const Wizard: React.FC<WizardProps> = ({ questions, onComplete }) => {
                       ? (answers[currentQuestion.id] || []).includes(option.value)
                       : answers[currentQuestion.id] === option.value
                   }
-                  onClick={() => 
-                    currentQuestion.type === 'multi' 
-                      ? toggleMultiSelect(option.value) 
+                  onClick={() =>
+                    currentQuestion.type === 'multi'
+                      ? toggleMultiSelect(option.value)
                       : handleAnswer(option.value)
                   }
                   multi={currentQuestion.type === 'multi'}
@@ -151,8 +151,8 @@ const OptionButton: React.FC<{
   <button
     onClick={onClick}
     className={`w-full p-4 md:p-5 rounded-xl border-2 text-left transition-all duration-200 flex items-start md:items-center justify-between group
-      ${selected 
-        ? 'border-brand bg-brand-light/10 shadow-md' 
+      ${selected
+        ? 'border-brand bg-brand-light/10 shadow-md'
         : 'border-slate-200 hover:border-brand-light hover:bg-slate-50 bg-white'
       }
     `}
@@ -174,10 +174,10 @@ const OptionButton: React.FC<{
         )}
       </div>
     </div>
-    
+
     <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center shrink-0 ml-4
-      ${selected 
-        ? 'bg-brand border-brand' 
+      ${selected
+        ? 'bg-brand border-brand'
         : 'border-slate-300 group-hover:border-brand-light'
       }
     `}>
@@ -185,5 +185,20 @@ const OptionButton: React.FC<{
     </div>
   </button>
 );
+
+const ProgressBar: React.FC<{ current: number; total: number }> = ({ current, total }) => {
+  const progress = Math.min(100, (current / total) * 100);
+
+  return (
+    <div className="w-full h-2 bg-slate-200 rounded-full overflow-hidden mb-6">
+      <motion.div
+        className="h-full bg-brand rounded-full"
+        initial={{ width: 0 }}
+        animate={{ width: `${progress}%` }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+      />
+    </div>
+  );
+};
 
 export default Wizard;
