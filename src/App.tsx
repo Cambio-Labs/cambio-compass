@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Compass } from 'lucide-react';
 import Wizard from './components/Wizard';
 import Results from './components/Results';
 import LandingPage from './components/LandingPage';
