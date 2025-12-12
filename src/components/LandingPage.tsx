@@ -84,7 +84,7 @@ const Hero: React.FC<HeroProps> = ({ onStart }) => {
                     transition={{ delay: 0.3, duration: 0.6 }}
                     className="text-xl text-slate-600 mb-12 max-w-2xl mx-auto leading-relaxed"
                 >
-                    Stop searching, start connecting. Get instantly matched with resources and programs designed for your specific business needs
+                    Cambio Compass is a fast, personalized matching tool designed to empower low-income entrepreneurs in NYC. The tool simplifies the confusing landscape of business resources by guiding users through a brief, tailored survey. Through a short survey, Cambio Compass instantly curates and filters relevant funding, educational programs, and support opportunities that match both eligibility criteria and specific growth needs.
                 </motion.p>
 
                 <motion.div

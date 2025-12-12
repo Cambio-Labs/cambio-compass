@@ -308,7 +308,8 @@ export const QUESTIONS: Question[] = [
       { label: 'Female', value: Demographic.FEMALE },
       { label: 'Veteran', value: Demographic.VETERAN },
       { label: 'Age 50+', value: Demographic.SENIOR },
-      { label: 'Black / African American', value: Demographic.BLACK }
+      { label: 'Black / African American', value: Demographic.BLACK },
+      { label: 'None of the above', value: Demographic.OTHER }
     ]
   }
 ];

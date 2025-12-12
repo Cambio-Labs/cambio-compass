@@ -23,7 +23,8 @@ export enum Demographic {
   SENIOR = 'Senior', // 50+
   BLACK = 'Black',
   NYCHA = 'NYCHA', // Resident
-  BROOKLYN = 'Brooklyn' // Resident
+  BROOKLYN = 'Brooklyn', // Resident
+  OTHER = 'Other'
 }
 
 export enum ServiceNeed {
