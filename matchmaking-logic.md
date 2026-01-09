@@ -19,17 +19,19 @@ Each program has requirements. If a user does not meet the requirements, the pro
 
 ## Step 2: Scoring (How Good Is the Fit?)
 
-Once eligibility is confirmed, each program receives a **score** based on how well it matches the user's profile. More matching criteria result in a higher score.
+Once eligibility is confirmed, each program receives a **score** based on how well it aligns with the user's preferences and goals. More matching criteria result in a higher score.
 
 **Factors that boost the score:**
 
 | Match Type | Example |
 |------------|---------|
-| **Perfect stage match** | A user in the "Seed stage" matched to a program specifically designed for Seed-stage ventures |
-| **NYCHA resident** | Exclusive NYCHA programs receive a significant score boost for eligible residents |
-| **Demographic match** | Programs designed for women, veterans, Black entrepreneurs, or individuals 50+ are prioritized when applicable |
-| **Industry match** | A tech entrepreneur matched to a tech-focused program scores higher |
-| **Needs match** | A user seeking "Funding" matched to a program that provides funding receives a boost |
+| **Stage alignment** | A user in the "Seed stage" matched to a program specifically designed for Seed-stage ventures scores higher than a general program |
+| **Industry match** | A tech entrepreneur matched to a tech-focused program scores higher than a general business program |
+| **Resource type match** | A user seeking "Funding" is matched to a program that provides grants or capital. A user seeking "Mentorship" is matched to a program offering coaching or community support. Both users may be eligible for both programs, but each scores higher on the program that matches their stated needs |
+
+---
+> ### Reference for Step 1 & 2
+>The full list of eligibility requirements and ideal matches for each program is documented in [this spreadsheet](https://docs.google.com/spreadsheets/d/1pfs2TlK7rdg22afjs39cnZe5QT41_KysafOhKfWz0I0).
 
 ---
 
