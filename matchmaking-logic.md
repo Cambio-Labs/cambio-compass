@@ -1,4 +1,4 @@
-# Matchmaking Logic
+# Compass Matchmaking Logic
 
 Cambio Compass uses a **filtering + scoring system** to match users to resources. First, programs the user does not qualify for are removed. Then, remaining programs are ranked by how well each one fits the user's specific situation.
 
