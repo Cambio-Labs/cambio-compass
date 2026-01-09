@@ -1,4 +1,4 @@
-# Cambio Compass
+# Cambio Compass: Developer Onboard Instructions
 
 **Cambio Compass** is a tool that focuses on giving low-income entrepreneurs a clear, guided path to the support they need. It’s a fast, personalized matching tool designed to simplify the search for business support and growth opportunities in NYC. By answering a brief, tailored survey, entrepreneurs can surface their unique profile and pinpoint their specific business needs. Cambio Compass then cuts through the noise—instantly curating relevant resources, educational programs, and opportunities that not only match their eligibility, but also align with what they’re genuinely looking for.
 
@@ -11,19 +11,11 @@
 - **No Account Required**: Low-friction access to resources.
 
 ## Tech Stack
-
-- **Framework**: [React](https://react.dev/) + [Vite](https://vitejs.dev/)
-- **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/) (via CDN for rapid prototyping)
-- **Animations**: [Framer Motion](https://www.framer.com/motion/)
-- **Icons**: [Lucide React](https://lucide.dev/)
-
-## Getting Started
-
-### Prerequisites
-
+- **React + TypeScript**
 - Node.js (v18 or higher)
 - npm
+
+## Getting Started
 
 ### Installation
 
@@ -56,23 +48,26 @@
 
 ```
 src/
+├── App.tsx                # Main application entry point
+├── constants.tsx          # Configuration for questions and resources
+├── types.ts               # TypeScript definitions
+├
 ├── components/
 │   ├── LandingPage.tsx    # Main landing page
 │   ├── Wizard.tsx         # Survey interface
 │   └── Results.tsx        # Matching results display
+├
 ├── services/
 │   └── matchingEngine.ts  # Logic for filtering resources
-├── App.tsx                # Main application entry point
-├── constants.tsx          # Configuration for questions and resources
-└── types.ts               # TypeScript definitions
 ```
 
 ## Deployment
 
 This project is configured for deployment on GitHub Pages.
 
-1. Ensure your `vite.config.ts` has the correct `base` path set (e.g., `base: '/cambio-compass/'`).
-2. Run the deploy script:
+1. Ensure your `vite.config.ts` has the correct `base` path set
+2. Navigate to the pages tab in the repository settings, ensure the *Build and deployment source* is set to **Deploy from a branch** and select the gh-pages branch (not main)
+3. Run the deploy script:
    ```bash
    npm run deploy
    ```
