@@ -25,9 +25,9 @@ Once eligibility is confirmed, each program receives a **score** based on how we
 
 | Match Type | Example |
 |------------|---------|
-| **Stage alignment** | A user in the "Seed stage" matched to a program specifically designed for Seed-stage ventures scores higher than a general program |
-| **Industry match** | A tech entrepreneur matched to a tech-focused program scores higher than a general business program |
-| **Resource type match** | A user seeking "Funding" is matched to a program that provides grants or capital. A user seeking "Mentorship" is matched to a program offering coaching or community support. Both users may be eligible for both programs, but each scores higher on the program that matches their stated needs |
+| **Stage alignment** | A user with just an idea to start a venture scores higher on seed stage specific programs than general ones |
+| **Industry match** | A tech entrepreneur scores higher on tech-focused programs |
+| **Resource type match** | A user seeking "Funding" scores higher on grant programs; a user seeking "Mentorship" scores higher on coaching programs |
 
 ---
 > ### Reference for Step 1 & 2

@@ -1,6 +1,6 @@
-# Cambio Compass: Developer Onboard Instructions
+# Technical Project Overview
 
-**Cambio Compass** is a tool that focuses on giving low-income entrepreneurs a clear, guided path to the support they need. It’s a fast, personalized matching tool designed to simplify the search for business support and growth opportunities in NYC. By answering a brief, tailored survey, entrepreneurs can surface their unique profile and pinpoint their specific business needs. Cambio Compass then cuts through the noise—instantly curating relevant resources, educational programs, and opportunities that not only match their eligibility, but also align with what they’re genuinely looking for.
+**Cambio Compass** is a tool for low-income entrepreneurs to understand and access the support they need based on their profile and goals. 
 
 ## Features
 
@@ -71,5 +71,3 @@ This project is configured for deployment on GitHub Pages.
    ```bash
    npm run deploy
    ```
-
----
