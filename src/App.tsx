@@ -55,7 +55,7 @@ function App() {
       {/* Footer */}
       <footer className="bg-white border-t border-slate-200 py-8">
         <div className="max-w-5xl mx-auto px-4 text-center text-slate-400 text-sm">
-          <p>© Cambio Labs</p>
+          &copy; {new Date().getFullYear()} Cambio Labs
         </div>
       </footer>
     </div>
