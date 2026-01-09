@@ -159,14 +159,10 @@ const Partners: React.FC = () => {
                     <h3 className="text-sm font-bold text-slate-400 uppercase tracking-wider">Partner Organizations</h3>
                 </div>
 
-                <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
-                    {PARTNERS.map((partner, index) => (
-                        <motion.div
+                <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+                    {PARTNERS.map((partner) => (
+                        <div
                             key={partner.name}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: index * 0.1 }}
                             className="flex items-center justify-center"
                         >
                             <img
@@ -174,7 +170,7 @@ const Partners: React.FC = () => {
                                 alt={`${partner.name} logo`}
                                 className={`${partner.height} w-auto object-contain max-w-[150px]`}
                             />
-                        </motion.div>
+                        </div>
                     ))}
                 </div>
             </div>
